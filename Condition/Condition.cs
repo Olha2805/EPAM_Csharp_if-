@@ -25,9 +25,10 @@ namespace Condition
         /// </summary>  
         public static int Task2(int n)
         {
-           char f = n[0];
-            char s = n[1];
-            char t = n[2];
+           string count = n.ToString();
+           char f = count[0];
+            char s = count[1];
+            char t = count[2];
             string result;
             if (f >= s && f >= t)
             {
@@ -55,9 +56,8 @@ namespace Condition
             else
                     result = f.ToString() + s.ToString() + t.ToString();
                
-
-             return result;
-            throw new NotImplementedException();
-        }
+			int resultt = int.Parse(result);
+             return resultt;
+              }
     }
 }
